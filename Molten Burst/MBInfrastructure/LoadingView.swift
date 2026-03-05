@@ -10,10 +10,11 @@ struct LoadingView: View {
                 .ignoresSafeArea()
                 .blur(radius: 10, opaque: true)
             
-            Image(.loaderViewLogoMB)
+            Image(.icon)
                 .resizable()
                 .scaledToFit()
                 .frame(height: 200)
+                .clipShape(.rect(cornerRadius: 30, style: .continuous))
                 .scaleEffect(0.9 + (loading * 0.1))
             
             VStack {
