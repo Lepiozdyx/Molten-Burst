@@ -7,7 +7,7 @@
 
 
 import SwiftUI
-
+import Combine
 
 final class MBShopViewModel: ObservableObject {
     // MARK: – Shop catalogues
